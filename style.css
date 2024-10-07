@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap);
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --lightblue: hsl(213deg, 20%, 22%);
+
+    --paragraph: 15px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Overpass;
+    box-sizing: border-box;
+ }
+body {
+    min-height: 100vh;min-width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--VeryDarkBlue);
+}
+
+.card1{
+    background-color: var(--DarkBlue);
+    color: var(--White);
+    padding: 30px;
+    border-radius: 30px;
+}
+header h1{
+    margin: 25px 0px 10px 0px;
+}
+header p{
+    width: 350px;
+    font-size: var(--paragraph);
+}
+.img1{
+    border-radius: 50%;
+    background-color: var(--lightblue);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img1 img{
+    width: 15px;
+}
+.btn1{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    display: flex;
+    background-color: var(--lightblue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 30px 0px ;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3px;
+    cursor: pointer;
+    &:hover{
+        background-color: var(--Orange);
+    }
+}
+
+
+
+button{
+    width: 100%;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 40px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+.card2{
+    background-color: var(--DarkBlue);
+    color:var(--White);
+    width: auto;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    border-radius: 30px;
+}
+.img{
+    margin-bottom: 27px;
+
+}
+
+.rate{
+    width: auto;
+    max-width: 50%;
+    padding: 5px;
+    border-radius: 50px;
+    text-wrap: nowrap;
+    background-color: var(--lightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+h2{
+    margin: 30px 0px 10px;
+}
+
+.card2 p{
+    width: 350px;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--LightGrey);
+}
+
+.rate p{
+    color: var(--Orange);
+}
+
+.attribution{
+    margin-top: 20px;
+    background-color: var(--LightGrey);
+    padding: 10px;
+    border-radius: 50px;
+    color: var(--White);
+    font-weight: 200;
+    cursor: pointer;
+
+}
+ a{
+    text-decoration: none;
+    &:hover{
+        color: var(--lightblue);
+    }
+}
+
+
+input[type="checkbox"]:checked + label{
+    background-color: white;
+}
