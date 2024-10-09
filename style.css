@@ -74,6 +74,7 @@ header p{
 
 
 button{
+    background-color: var(--Orange);
     width: 100%;
     font-weight: 600;
     padding: 10px;
